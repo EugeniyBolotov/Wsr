@@ -7,7 +7,7 @@ exports.Registr = (req,res)=>{
             response.statusError(rows,res,400);
         }
         else{
-            db.query(`INSERT INTO bd4p4tejrva2dt3sw2ua.user (Email,Password) VALUES ('${login}', '${pwd}');`, (error,rows,fields) =>{
+            db.query(`INSERT INTO bd4p4tejrva2dt3sw2ua.Users (Email,Password) VALUES ('${login}', '${pwd}');`, (error,rows,fields) =>{
                 response.statuslog(201,res);
         })
         }
